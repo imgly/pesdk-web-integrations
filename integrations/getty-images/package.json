@@ -1,0 +1,66 @@
+{
+  "name": "@pesdk/getty-images-integration",
+  "version": "1.0.0",
+  "main": "./dist/getty-images.umd.js",
+  "module": "./dist/getty-images.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/getty-images.es.js",
+      "require": "./dist/getty-images.umd.js"
+    }
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "peerDependencies": {
+    "@pesdk/getty-images": ">= 1.2.0",
+    "photoeditorsdk": "^5.16.0",
+    "react": ">= 16.8.6",
+    "react-dom": ">= 16.8.6",
+    "styled-components": ">= 4.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.3.2",
+    "vite": "^2.9.9",
+    "vite-plugin-dts": "^1.2.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "server": "node app.js",
+    "build": "vite build",
+    "copy:files": "rm -rf ./example/public/* && mv ./dist/* ./example/public/"
+  },
+  "keywords": [
+    "photo",
+    "image",
+    "photoeditor",
+    "getty",
+    "sdk",
+    "api",
+    "search"
+  ],
+  "author": {
+    "name": "img.ly GmbH",
+    "email": "contact@img.ly"
+  },
+  "homepage": "https://www.img.ly/",
+  "bugs": {
+    "url": "https://support.img.ly"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "BSD-3-Clause",
+  "licenseFilename": "LICENSE.md",
+  "readmeFilename": "README.md"
+}

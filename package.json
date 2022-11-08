@@ -1,0 +1,45 @@
+{
+  "name": "pesdk-web-integrations",
+  "version": "1.0.0",
+  "description": "Collection of PhotoEditor SDK integrations",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "lint": "eslint ./integrations"
+  },
+  "dependencies": {
+    "@pesdk/getty-images": "1.2.0",
+    "photoeditorsdk": "5.17.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "4.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "4.4.0",
+    "@typescript-eslint/eslint-plugin": "5.27.0",
+    "@typescript-eslint/parser": "5.27.0",
+    "eslint": "8.16.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.30.0",
+    "prettier": "2.6.2",
+    "process": "^0.11.10",
+    "typescript": "4.7.2"
+  },
+  "workspaces": [
+    "integrations/*"
+  ],
+  "author": {
+    "name": "img.ly GmbH",
+    "email": "contact@img.ly"
+  },
+  "license": "BSD-3-Clause",
+  "licenseFilename": "LICENSE.md"
+}
