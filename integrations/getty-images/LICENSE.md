@@ -4,7 +4,7 @@ The PhotoEditor SDK license key contained within this wrapper may not be used ou
 
 In order to run a stand-alone instance of the PhotoEditor SDK, you'll have to purchase a commercial PhotoEditor SDK or VideoEditor SDK license. Visit [https://img.ly](https://img.ly/) for more details.
 
-Copyright (c) 2014-2022, img.ly GmbH All rights reserved.
+Copyright (c) 2014-2023, img.ly GmbH All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

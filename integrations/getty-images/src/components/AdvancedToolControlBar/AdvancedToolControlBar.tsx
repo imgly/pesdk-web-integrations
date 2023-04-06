@@ -2,8 +2,11 @@ import {
   AdvancedUIToolControlBar,
   CustomAdvancedToolControlBarProps,
   Tool,
-} from 'photoeditorsdk';
+} from 'photoeditorsdk/no-polyfills';
 import React from 'react';
+
+// @types/styled-components@4.4.x will produce an error that is only fixed in @types/styled-components@5.x
+// @ts-ignore
 import styled from 'styled-components';
 
 const CustomAdvancedUIToolControlBar = styled(AdvancedUIToolControlBar)<{
@@ -12,7 +15,7 @@ const CustomAdvancedUIToolControlBar = styled(AdvancedUIToolControlBar)<{
   * button {
     margin-right: 8px;
   }
-  * button:nth-child(${props => props.columns}n) {
+  * button:nth-child(${(props: any) => props.columns}n) {
     margin-right: 0px;
   }
 `;

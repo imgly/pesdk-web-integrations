@@ -8,7 +8,8 @@ import {
 } from '@pesdk/getty-images';
 import { Configuration } from 'photoeditorsdk';
 
-export interface IntegrationGettyConfiguration extends Configuration {
+export interface IntegrationGettyConfiguration
+  extends Omit<Configuration, 'license' | 'image'> {
   /**
    * Public getty images api key
    */
@@ -52,4 +53,15 @@ export interface IntegrationGettyConfiguration extends Configuration {
    * {function} callback to trigger an export for the currently loaded image
    */
   onConfirm?: OnConfirm;
+  /**
+   * The PESDK license. If no license (or an invalid license) is provided, the
+   * engine will render a watermark over the preview and export output.
+   */
+  license?: string;
+  /**
+   * The image that should be loaded and displayed initially
+   * accepts url or HTMLImageElement or imagePath relative to assets folder
+   * This is a required field, no default value
+   */
+  image?: string | HTMLImageElement | undefined | null;
 }

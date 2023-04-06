@@ -1,11 +1,11 @@
-import type { EditorApi } from 'photoeditorsdk';
-import { PhotoEditorSDKUI as PESDK } from 'photoeditorsdk';
+import type { EditorApi } from 'photoeditorsdk/no-polyfills';
+import { PhotoEditorSDKUI as PESDK } from 'photoeditorsdk/no-polyfills';
 import { getSDKConfig } from './getSDKConfig';
 import type { IntegrationGettyConfiguration } from './types';
 
 export * from '@pesdk/getty-images';
 
-export * from 'photoeditorsdk';
+export * from 'photoeditorsdk/no-polyfills';
 
 export const PhotoEditorSDKUI = {
   init: (
